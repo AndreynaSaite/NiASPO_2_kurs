@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Очередь</title>
+  <link rel="stylesheet" href="blocks/home.css">
+</head>
+<body>
+  <div class="queue-layout">
+    <!-- Верхний блок с информацией -->
+    <div class="info-bar">
+      <div class="info-text">
+        Ваш талон: <span id="my-ticket">—</span><br>
+        Вы в очереди: <span id="queue-position">—</span><br>
+        Ваш кабинет: <span id="my-cabinet">—</span>
+      </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="main-content">
+      <!-- Левый блок: список номеров кабинетов -->
+      <div class="tickets">
+        <button class="ticket ticket1" type="submit" name="add1">Кабинет 1</button>
+        <button class="ticket ticket2" type="submit" name="add2">Кабинет 2<button>
+        <button class="ticket ticket3" type="submit" name="add3">Кабинет 3<button>
+        <button class="ticket ticket4" type="submit" name="add4">Кабинет 4<button>
+      </div>
+
+      <!-- Правый блок: окна для каждого кабинета -->
+      <div class="fields">
+        <div class="field">
+          <div class="field-column">Кабинет 1</div>
+          <div class="field-column field-output queue1" id="cabinet1">Ваш талон: <span id="ticket1">—</span></div>
+        </div>
+        <div class="field">
+          <div class="field-column">Кабинет 2</div>
+          <div class="field-column field-output queue2" id="cabinet2">Ваш талон: <span id="ticket2">—</span></div>
+        </div>
+        <div class="field">
+          <div class="field-column">Кабинет 3</div>
+          <div class="field-column field-output queue3" id="cabinet3">Ваш талон: <span id="ticket3">—</span></div>
+        </div>
+        <div class="field">
+          <div class="field-column">Кабинет 4</div>
+          <div class="field-column field-output queue4" id="cabinet4">Ваш талон: <span id="ticket4">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
